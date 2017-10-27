@@ -22,12 +22,12 @@ if __name__ == '__main__':
     print('=== S I M P L E  C A L C U L A T O R ===')
     while True:
         print('''
-            escribe una opcion:
+            What do you want to do?:
             1 Addition
             2 Substraction
             3 Multiplication
             4 Divition
-            5 Salir
+            5 Out
         ''')
 
         USER = input('What is youre choose? ')
@@ -73,3 +73,4 @@ if __name__ == '__main__':
         else:
 
             print('=== Give me a valid option ===')
+
