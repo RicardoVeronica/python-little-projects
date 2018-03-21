@@ -1,4 +1,10 @@
-''' Phonebook '''
+"""
+File: phonebook
+Author: setcain
+Email: setcain00@gmail.com
+Github: https://github.com/setcain
+Description: simple phonebook in python
+"""
 
 # Main method
 if __name__ == '__main__':
@@ -15,5 +21,3 @@ if __name__ == '__main__':
             [s]ee a contact
             [l]ist all contact
             '''))
-
-

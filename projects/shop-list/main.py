@@ -23,14 +23,14 @@ def remove_item():
     """
     Delete an item from the var list
     """
-    print('remove some item') 
+    print('remove some item')
 
 
 def see_list():
     """
     See the var list items
     """
-    print('see your list') 
+    print('see your list')
 
 
 def no_option():
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     # Vars
     valid_options = [0, 1, 2, 3]
-    
+
     # Init
     print('===== S H O P  L I S T =====')
 
@@ -73,4 +73,3 @@ if __name__ == '__main__':
 
 else:
     print('Something is broken')
-
