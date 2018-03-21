@@ -1,75 +1,55 @@
-""" A simple shop list for practice python language
-Shop list:
-    Add item
-    Remove item
-    Show items
-"""
-
-# Vars
-shop_list = list()
+articles = []
 
 
-# Functions
 def add_item():
-    """
-    Add an item in the var list
-    """
-    print('Add an item')
-    item = input('Item name: ')
-    shop_list.append(item)
+    item = input('\nGive me the name of the item to add: ')
+    item = item.capitalize()
+    articles.append(item)
+
+    print('\n===== Item {} added to your list =====\n'.format(item))
 
 
-def remove_item():
-    """
-    Delete an item from the var list
-    """
-    print('remove some item')
+def delete_item():
+    item = input('\nGive me the name of item to delete: ')
+    item = item.capitalize()
+    articles.remove(item)
+
+    print('\n===== The item {} has been deleted =====\n'.format(item))
 
 
 def see_list():
-    """
-    See the var list items
-    """
-    print('see your list')
+    if len(articles) < 1:
+        print('\n=== Your list is empty, add some items ===\n')
+    else:
+        print('\n===== This is your list =====\n')
+        for item in articles:
+            print('{}\n'.format(item))
 
 
-def no_option():
-    """
-    If the user put any unavailable option show this message
-    """
-    print('No available option, try again')
-
-
-# Main
-if __name__ == '__main__':
-
-    # Vars
-    valid_options = [0, 1, 2, 3]
-
-    # Init
-    print('===== S H O P  L I S T =====')
-
-    # Option menu
+def main():
     while True:
-        user = int(input('''
-            Wellcome what do you want to do?
-            [1] Add item to your list
-            [2] Remove item to your list
-            [3] See your list
-            [0] Out from app
-            '''))
+        print('====== S H O P  L I S T ======')
+        print('''
+              Welcom to -SHOP LIST- What do yo want to do?\n
+              [1] Add item to your list
+              [2] Delete item from your list
+              [3] See your list
+              [4] Out
+              ''')
+        user = int(input('What is your choice: '))
 
-        if user == valid_options[1]:
+        if user < 1 or user > 4:
+            print('\n ===== Give me a valid option =====\n')
+        elif user == 1:
             add_item()
-        elif user == valid_options[2]:
-            remove_item()
-        elif user == valid_options[3]:
+        elif user == 2:
+            delete_item()
+        elif user == 3:
             see_list()
-        elif user == valid_options[0]:
-            print('See you later...')
+        elif user == 4:
+            print('\nThank you for using === SHOP LIST === See you later')
             break
-        elif user not in valid_options:
-            no_option()
 
-else:
-    print('Something is broken')
+
+if __name__ == "__main__":
+    main()
