@@ -1,3 +1,11 @@
+"""
+File: shoplist
+Author: setcain
+Email: setcain@email.com
+Github: https://github.com/setcain
+Description: Simple shop list
+"""
+
 articles = []
 
 
