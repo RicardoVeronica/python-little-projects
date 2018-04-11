@@ -2,7 +2,8 @@
 File: phonebook
 Author: setcain
 Email: setcain00@gmail.com
-Github: https://github.com/setcain
+Github: https://github.com/SetCain/python-basics/tree/master/projects/
+        phonebook-modules 
 Description: simple phonebook in python
 """
 from functions import add_contact, update_contact, remove_conntact,\
@@ -27,7 +28,7 @@ if __name__ == '__main__':
             [0] Out
             ''')
         try:
-            msg = '\nWrite just integers numbers for this option...'
+            msg = '\nWrite a valid option...'
             user = int(input('What do you want to do? '))
 
             if user == 1:

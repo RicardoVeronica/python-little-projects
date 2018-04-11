@@ -11,13 +11,13 @@ contacts = {}
 
 def add_contact():
     name = input('\nGive a name for you new contact: ')
-    name = name.capitalize()
+    name = name.upper()
 
     try:
         phone = int(input('Give a number for you new contact: '))
         contacts[name] = phone
 
-        print('\ncontact {}, added. phone number {}'.format(name, phone))
+        print('\nContact: {}\nPhone number: {}\nAdded'.format(name, phone))
 
     except ValueError:
         print('\nWrite a phone number')
@@ -25,10 +25,10 @@ def add_contact():
 
 def update_contact():
     if len(contacts) == 0:
-        print("\nYou dont't have any contact")
+        print("\nYou don't have any contact")
     else:
         contact_to_change = input('\nGive me the name to update: ')
-        contact_to_change = contact_to_change.capitalize()
+        contact_to_change = contact_to_change.upper()
 
         change_number = input('Write the new number: ')
         contacts[contact_to_change] = change_number
@@ -42,7 +42,7 @@ def remove_conntact():
         print("\nYou don't have any contact")
     else:
         name = input('\nGive me the name of the contact to delete: ')
-        name = name.capitalize()
+        name = name.upper()
         contacts.pop(name)
 
         print('\nThe contact {} was deleted'.format(name))
@@ -53,7 +53,7 @@ def see_a_contact():
         print("\nYou don't have any contact")
     else:
         contact = input('\nGive me the name for the query: ')
-        contact = contact.capitalize()
+        contact = contact.upper()
 
         if contact in contacts:
             query = contacts[contact]
@@ -68,7 +68,8 @@ def see_all_contacts():
         print("\nYou don't have any contact")
     else:
         for idx, contact in enumerate(contacts):
-            print('\n{} - {} : {}'.format(idx + 1, contact, contacts[contact]))
+            print('\n{} - {} : {}'.format(idx + 1, contact,
+                  contacts[contact]))
 
 
 def clear_phonebook():
@@ -99,7 +100,7 @@ if __name__ == '__main__':
             [0] Out
             ''')
         try:
-            msg = '\nWrite just integers numbers for this option...'
+            msg = '\nWrite a valid option...'
             user = int(input('What do you want to do? '))
 
             if user == 1:
