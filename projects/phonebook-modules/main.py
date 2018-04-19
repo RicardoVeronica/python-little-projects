@@ -3,7 +3,7 @@ File: phonebook
 Author: setcain
 Email: setcain00@gmail.com
 Github: https://github.com/SetCain/python-basics/tree/master/projects/
-        phonebook-modules 
+        phonebook-modules
 Description: simple phonebook in python
 """
 from functions import add_contact, update_contact, remove_conntact,\
