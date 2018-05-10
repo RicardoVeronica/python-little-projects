@@ -1,0 +1,11 @@
+Media:
+x = E ni / n
+
+Moda: valor que mas repite en una serie de datos.
+1,2,2,3,5,2,4,2,7,1,10,2  Moda = 2
+
+Mediana: Valor central en datos agrupados de menor a mayor
+1.5.4.2.3 Mediana = 4
+1,1,2,3,3,4,5,6,7,9,9,9 = 4+5 / 2 = 4.5
+
+

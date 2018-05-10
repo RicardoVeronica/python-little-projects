@@ -6,7 +6,7 @@ Github: https://github.com/setcain
 Description: simple phonebook in python
 """
 
-contacts = {}
+contacts = {}  # var - dict
 
 
 def add_contact():
@@ -27,21 +27,21 @@ def update_contact():
     if len(contacts) == 0:
         print("\nYou don't have any contact")
     else:
-        contact_to_change = input('\nGive me the name to update: ')
+        contact_to_change = str(input('\nGive me the name to update: '))
         contact_to_change = contact_to_change.upper()
 
-        change_number = input('Write the new number: ')
+        change_number = int(input('Write the new number: '))
         contacts[contact_to_change] = change_number
 
         print('\nThe contact {} has change number for {}'.
-              format(contact_to_change, change_number))
+          format(contact_to_change, change_number))
 
 
 def remove_conntact():
     if len(contacts) == 0:
         print("\nYou don't have any contact")
     else:
-        name = input('\nGive me the name of the contact to delete: ')
+        name = str(input('\nGive me the name of the contact to delete: '))
         name = name.upper()
         contacts.pop(name)
 
@@ -52,7 +52,7 @@ def see_a_contact():
     if len(contacts) == 0:
         print("\nYou don't have any contact")
     else:
-        contact = input('\nGive me the name for the query: ')
+        contact = str(input('\nGive me the name for the query: '))
         contact = contact.upper()
 
         if contact in contacts:

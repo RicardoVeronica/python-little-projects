@@ -1,4 +1,4 @@
 # python-basics
-The most basic in Python, Django, Flask and more
+The most basic in Python.
 
-Basics Python, Flask and Django projects
+python basics programming

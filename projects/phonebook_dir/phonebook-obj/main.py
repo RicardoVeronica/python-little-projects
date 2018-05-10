@@ -11,6 +11,7 @@ from module import Phonebook
 
 # Main method
 if __name__ == '__main__':
+
     instance = Phonebook()
 
     # Init

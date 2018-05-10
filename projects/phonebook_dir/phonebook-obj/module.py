@@ -22,24 +22,24 @@ class Phonebook:
         if len(self._contacts) == 0:
             print("\nYou dont't have any contact")
         else:
-            contact_to_change = input('\nGive me the name to update: ')
-            contact_to_change = contact_to_change.upper()
+            name_to_search = input('\nGive me the name to update: ')
+            name_to_search = name_to_search.upper()
 
-            change_number = input('Write the new number: ')
-            self._contacts[contact_to_change] = change_number
+            new_number = input('Write the new number: ')
+            self._contacts[name_to_search] = new_number
 
             print('\nThe contact {} has change number for {}'.
-                  format(contact_to_change, change_number))
+                  format(name_to_search, new_number))
 
     def remove_conntact(self):
         if len(self._contacts) == 0:
             print("\nYou don't have any contact")
         else:
-            name = input('\nGive me the name of the contact to delete: ')
-            name = name.upper()
-            self._contacts.pop(name)
+            name_to_delete = input('\nGive me the name of the contact to delete: ')
+            name_to_delete = name_to_delete.upper()
+            self._contacts.pop(name_to_delete)
 
-            print('\nThe contact {} was deleted'.format(name))
+            print('\nThe contact {} was deleted'.format(name_to_delete))
 
     def see_a_contact(self):
         if len(self._contacts) == 0:

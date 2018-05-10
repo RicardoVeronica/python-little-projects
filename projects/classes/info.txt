@@ -1,0 +1,15 @@
+__init__ es el contructor de la clase
+
+print(Character)  # Class
+print(Character())  # Object
+
+# Knight
+# Mercenary
+# Warrior
+# Herald
+# Thief
+# Assassin
+# Sorcerer
+# Pyromancer
+# Cleric
+# Deprived
