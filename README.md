@@ -1,4 +1,5 @@
-# python-basics
-The most basic in Python.
+# python-little-projects
 
-python basics programming
+## The most basic projects in Python.
+
+*Includes some beginner projects that I made in Python a few years ago*
